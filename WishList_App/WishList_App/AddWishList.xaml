@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:behaviors="clr-namespace:WishList_App"
+             mc:Ignorable="d"
+             BackgroundColor="#BFFFC7"
+             
+             x:Class="WishList_App.AddWishList">
+             
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand"
+>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+              
+                
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                
+                
+            </Grid.ColumnDefinitions>
+
+            <Editor  x:Name="Titles" HeightRequest="100" BackgroundColor="#FEFCE8" Placeholder="Title" Text=""   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6"/>
+
+
+            <Image x:Name="MyImage" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" />
+            <Button Clicked="TP_Clicked"   BackgroundColor="#FEFCE8"  Text="Take photo" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1"/>
+            <Button Clicked="CFG_Clicked"  BackgroundColor="#FEFCE8" Text="Choose from Gallery" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="1"/>
+
+
+            <Editor x:Name ="Description"   AutoSize="TextChanges" BackgroundColor="#FEFCE8" Placeholder="Description" Text="" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="6" />
+
+            <Entry x:Name="Price" BackgroundColor="#FEFCE8" Keyboard="Numeric"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" >
+                <Entry.Behaviors>
+                    <behaviors:PriceBehavior />
+                </Entry.Behaviors>
+            </Entry>
+            <Picker x:Name="Currancy" Title="Select Currancy" BackgroundColor="#FEFCE8"  Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="3">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>AED </x:String>
+                        <x:String>ARS</x:String>
+                        <x:String>AUD</x:String>
+                        <x:String>BGN</x:String>
+                        <x:String>BOB</x:String>
+                        <x:String>BRL</x:String>
+                        <x:String>BYN</x:String>
+                        <x:String>CAD</x:String>
+                        <x:String>CHF</x:String>
+                        <x:String>CLP</x:String>
+                        <x:String>COP</x:String>
+                        <x:String>CRC</x:String>
+                        <x:String>CUP</x:String>
+                        <x:String>CZK</x:String>
+                        <x:String>DKK</x:String>
+                        <x:String>DOP</x:String>
+                        <x:String>EGP</x:String>
+                        <x:String>EUR</x:String>
+                        <x:String>GBP</x:String>
+                        <x:String>HKD</x:String>
+                        <x:String>HRK</x:String>
+                        <x:String>HUF</x:String>
+                        <x:String>IDR</x:String>
+                        <x:String>ILS</x:String>
+                        <x:String>INR</x:String>
+                        <x:String>ISK</x:String>
+                        <x:String>JMD</x:String>
+                        <x:String>JPY</x:String>
+                        <x:String>KRW</x:String>
+                        <x:String>LEK</x:String>
+                        <x:String>LKR</x:String>
+                        <x:String>LTL</x:String>
+                        <x:String>LVL</x:String>
+                        <x:String>MKD</x:String>
+                        <x:String>MXN</x:String>
+                        <x:String>MYR</x:String>
+                        <x:String>NOK</x:String>
+                        <x:String>NPR</x:String>
+                        <x:String>NZD</x:String>
+                        <x:String>PAB</x:String>
+                        <x:String>PEN</x:String>
+                        <x:String>PHP</x:String>
+                        <x:String>PKR</x:String>
+                        <x:String>QAR</x:String>
+                        <x:String>RMB</x:String>
+                        <x:String>RON</x:String>
+                        <x:String>RSD</x:String>
+                        <x:String>RUB</x:String>
+                        <x:String>SAR</x:String>
+                        <x:String>SEK</x:String>
+                        <x:String>SGD</x:String>
+                        <x:String>SVC</x:String>
+                        <x:String>THB</x:String>
+                        <x:String>TWD</x:String>
+                        <x:String>UAH</x:String>
+                        <x:String>USD</x:String>
+                        <x:String>UYU</x:String>
+                        <x:String>UZS</x:String>
+                        <x:String>VEF</x:String>
+                        <x:String>YER</x:String>
+                        <x:String>ZAR</x:String>
+
+                    </x:Array>
+                </Picker.ItemsSource>
+                <Picker.SelectedIndex>
+                    18
+                </Picker.SelectedIndex>
+            </Picker>
+
+
+            <Editor x:Name="PasteLink" AutoSize="TextChanges" BackgroundColor="#FEFCE8" Placeholder="Paste a link" Text=""  Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="6"/>
+
+            <Button  x:Name="AddGift"  TextColor="Black"  BorderColor="Black" BackgroundColor="#FEFCE8"  Clicked="AddGift_Clicked" Text="ADD NEW GIFT" Grid.Row="7" Grid.Column="4" Grid.ColumnSpan ="2"/>
+            <Button Text="CLEAR" BackgroundColor="#FEFCE8" TextColor="Black"   Clicked="Clear_Clicked" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan ="2"/>
+
+        </Grid>   
+        
+        
+    </ContentPage.Content>
+</ContentPage>

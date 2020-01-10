@@ -1,0 +1,16 @@
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\bin\Debug\netstandard2.0\WishList_App.deps.json
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\bin\Debug\netstandard2.0\WishList_App.dll
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\bin\Debug\netstandard2.0\ref\WishList_App.dll
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\bin\Debug\netstandard2.0\WishList_App.pdb
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\WishList_App.csprojAssemblyReference.cache
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\AddWishList.xaml.g.cs
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\WishList_App.AssemblyInfoInputs.cache
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\WishList_App.AssemblyInfo.cs
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\WishList_App.dll
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\ref\WishList_App.dll
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\WishList_App.pdb
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\ViewItems.xaml.g.cs
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\WebPage.xaml.g.cs
+C:\Users\FOladiji\Engineering45\WishList_App\WishList_App\WishList_App\obj\Debug\netstandard2.0\XamlC.stamp

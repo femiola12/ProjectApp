@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:WishList_App.Converters"
+             mc:Ignorable="d"
+             x:Class="WishList_App.ViewItems">
+
+   
+
+    <ContentPage.Content>
+        
+      
+        <StackLayout>
+            
+            <Button  Clicked="Delete_Clicked" Text="Delete" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0"/>
+
+      
+            <ListView x:Name="contentsListView"  >
+               
+                <ListView.Header>
+                    <Grid>
+
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Text="Title" HorizontalTextAlignment="Start"/>
+                        <Label Grid.Column="1" Text="Description" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Column="2" Text="Price" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Column="3" Text="Currancy" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Column="4" Text="Past Link" HorizontalTextAlignment="Center"/>
+                        <Label Grid.Column="5" Text="Images" HorizontalTextAlignment="End"/>
+
+
+                    </Grid>
+
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0"  Text="{Binding Title}" HorizontalTextAlignment="Center"/>
+                                <Label Grid.Column="1" Text="{Binding Description}"  HorizontalTextAlignment="Center"/>
+                                <Label Grid.Column="2" Text="{Binding Price}"  HorizontalTextAlignment="Center"/>
+                                <Label Grid.Column="3" Text="{Binding Currancy}"  HorizontalTextAlignment="Center"/>
+                                <Label Grid.Column="4" Text="{Binding PasteLink}"  HorizontalTextAlignment="Center"/>
+ 
+                                     
+                                <Image Grid.Column="5" Source="{Binding ImageFilePath}"></Image>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+
+    </ContentPage.Content>
+   
+</ContentPage>
